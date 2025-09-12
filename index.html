@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mini Student Management App</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; padding: 20px">
+    <h2>Mini Student Management App</h2>
+    <pre
+      id="output"
+      style="background: #f4f4f4; padding: 10px; border-radius: 5px"
+    ></pre>
+
+    <script>
+      let schollName = "Bachpan School";
+      let totalStudents = 500;
+      let isOpen = true;
+
+      const students = ["Prajakta", "Rutuja", "Sonali", "Snehal", "Pranali"];
+      console.log("Initial Students List:", students);
+      students.push("Aishwarya");
+      console.log("Added Student", students);
+      students.pop();
+      console.log(students);
+      students.splice(1, 1);
+      console.log("After removing 2nd student", students);
+
+      const studeProfile = {
+        name: "Prajakta",
+        age: 15,
+        marks: [90, 85, 88],
+        isPassed: false,
+      };
+
+      //Random number Task
+      let randomNumber = Math.floor(Math.random() * 100) + 1;
+      console.log("Roll No:", randomNumber);
+
+      //5. Primitive vs Non-Primitive Check:
+      let x = 10;
+      let y = x;
+      y = 20;
+      console.log("x:", x);
+      console.log("y:", y);
+
+      const arr1 = [1, 2, 3];
+      const arr2 = arr1;
+      arr2.push(4);
+      console.log("arr1:", arr1);
+      console.log("arr2:", arr2);
+    </script>
+  </body>
+</html>
