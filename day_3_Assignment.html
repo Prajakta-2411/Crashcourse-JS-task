@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    
+      let students = [
+        { rollNo: 1, name: "Prajakta", marks: 85 },
+        { rollNo: 2, name: "Rutuja", marks: 72 },
+        { rollNo: 3, name: "Pranali", marks: 91 },
+        { rollNo: 4, name: "Pranay", marks: 67 },
+        { rollNo: 5, name: "Sayali", marks: 78 },
+        { rollNo: 6, name: "Omkar", marks: 54 },
+        { rollNo: 7, name: "Shruti", marks: 95 },
+        { rollNo: 8, name: "Rohan", marks: 63 },
+        { rollNo: 9, name: "Manoj", marks: 88 },
+        { rollNo: 10, name: "Sneha", marks: 70 },
+        { rollNo: 11, name: "Tejas", marks: 60 },
+        { rollNo: 12, name: "Aarav", marks: 82 },
+        { rollNo: 13, name: "Ishita", marks: 49 },
+        { rollNo: 14, name: "Siddharth", marks: 77 },
+        { rollNo: 15, name: "Neha", marks: 92 },
+        { rollNo: 16, name: "Aditya", marks: 65 },
+        { rollNo: 17, name: "Tanvi", marks: 81 },
+        { rollNo: 18, name: "Atharva", marks: 74 },
+        { rollNo: 19, name: "Kunal", marks: 56 },
+        { rollNo: 20, name: "Meera", marks: 89 },
+      ];
+
+      let totalStudents = students.length;
+      if (totalStudents === 0) {
+        console.log("No students Found.");
+      } else {
+        let randomStudentIndex = Math.floor(Math.random() * totalStudents);
+        let randomStudent = students[randomStudentIndex];
+        console.log("Randomly selected student:", randomStudent);
+
+        let studentGrade;
+        if (randomStudent.marks >= 90) {
+          studentGrade = "A";
+        } else if (randomStudent.marks >= 75) {
+          studentGrade = "B";
+        } else if (randomStudent.marks >= 50) {
+          studentGrade = "C";
+        } else {
+          studentGrade = "F";
+        }
+        console.log(
+          `Student Name: ${randomStudent.name}, Marks: ${randomStudent.marks} ->, Grade: ${studentGrade}`
+        );
+      }
+    </script>
+  </body>
+</html>
